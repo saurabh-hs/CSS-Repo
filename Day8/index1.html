@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            /* height: 400px;
+            width: 400px; */
+            background-color: antiquewhite;
+            border: 2px solid black;
+            display: flex;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        #box1{
+            background-color: aqua;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;  
+
+        }
+
+        #box2{
+            background-color: orange;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box3{
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box4{
+            background-color: red;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        @media (max-width: 800px) {
+            .container{
+                flex-direction: column;
+            }
+            #box1{
+                background-color: springgreen;
+            }
+
+            #box2{
+                background-color: orchid;
+            }
+
+            #box3{
+                background-color: brown;
+            }
+
+            #box4{
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .container{
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        Media Query
+    </div> -->
+
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
