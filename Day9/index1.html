@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            width: 50vw;
+            height: 50vh;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .box{
+            background-color: yellow;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            /* box-shadow: blue -10px -10px; */
+            /* box-shadow: 10px 5px 5px rgb(30, 0, 255); */
+            box-shadow: 
+                10px 10px 5px red,
+                -10px -10px 5px blue;
+
+            /* box-shadow: inset 5em 1em silver; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
