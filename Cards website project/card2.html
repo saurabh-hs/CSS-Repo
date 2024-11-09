@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background: #c94b4b;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            background-color: white;
+            width: 400px;
+            height: 600px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        img{
+            width: 400px;
+            height: 200px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+       .contentBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        text-align: center;
+       }
+
+       .contentBox h2{
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+       }
+
+       .contentBox p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 10px;
+       }
+
+       .box{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+        width: 350px;
+        height: 60px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       .leftBox{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+       }
+
+       .leftBox img{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+       }
+
+       .innerleftBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+       }
+
+       .innerleftBox p{
+        font-weight: 800;
+       }
+
+       .rightBox a{
+        font-weight: 600;
+        color: blue;
+        text-decoration: underline;
+       }
+
+       button{
+        background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+        border-radius: 10px;
+        width: 350px;
+        height: 60px;
+        box-shadow: 0px 0px 10px black;
+        color: white;
+        font-size: 15px;
+       }
+
+       a{
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="card2_images.jpeg" alt="image"/>
+
+            <div class="contentBox">
+                <h2>Order Summary</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut sunt enim odit vitae unde sed quod cum id labore.</p>
+            </div>
+
+            <div class="box">
+                <div class="leftBox">
+                    <img src="music logo.png" alt="Logo"/>
+
+                    <div class="innerleftBox">
+                        <h3>Annual Plan</h3>
+                    <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="rightBox">
+                    <a href="#">Change</a>
+                </div>     
+            </div>
+
+            <button>Proceed to Payment</button>
+
+            <a href="#">Cancel Order</a>
+           
+        </div>
+    </div>
+</body>
+</html>
